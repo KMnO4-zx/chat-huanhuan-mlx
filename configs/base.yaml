@@ -1,0 +1,31 @@
+# Run 1 - baseline LoRA SFT on data/v1
+# Role: establish the training recipe before any targeted improvement.
+model: models/Qwen3-0.6B-mlx
+train: true
+data: data/v1
+fine_tune_type: lora
+optimizer: adamw
+
+# LoRA: adapt every transformer block; rank 16 is a good capacity/size tradeoff
+# for a 0.6B model on a 24GB M4.
+num_layers: -1
+lora_parameters:
+  rank: 16
+  dropout: 0.05
+  scale: 20.0
+
+batch_size: 8
+iters: 600
+learning_rate: 1.0e-4
+val_batches: -1
+steps_per_report: 10
+steps_per_eval: 50
+save_every: 100
+max_seq_length: 512
+grad_checkpoint: false
+grad_accumulation_steps: 1
+
+# Only assistant turns (incl. the empty <think></think> block the non-thinking
+# template prepends) contribute to the loss.
+mask_prompt: true
+seed: 42

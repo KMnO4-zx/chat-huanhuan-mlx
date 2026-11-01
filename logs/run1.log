@@ -1,0 +1,90 @@
+Loading configuration file /Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/configs/base.yaml
+swanlab: Tracking run with swanlab version 0.10.3
+swanlab: 💾 Run data saved at 
+/Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/outputs/adapters/
+run1/swanlog/run-20261101_162108-0ohnjzz7
+swanlab: 📁 View project at https://swanlab.cn/@kmno4/huanhuan-mlx
+swanlab: 🚀 View run run1 at 
+https://swanlab.cn/@kmno4/huanhuan-mlx/runs/0ohnjzz7
+Loading pretrained model
+Loading datasets
+Training
+[34m╭─[0m[34m [0m[1;35mmlx_lm.lora[0m[34m [0m[34m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[34m─╮[0m
+[34m│[0m    [39mmodel        [0m   [1mmodels/Qwen3-0.6B-mlx[0m                                                                             [34m│[0m
+[34m│[0m    [39mtype         [0m   [1mlora · -1 layers · rank 16[0m                                                                        [34m│[0m
+[34m│[0m    [39mdataset      [0m   [1mdata/v1[0m                                                                                           [34m│[0m
+[34m│[0m    [39moptimizer    [0m   [1madamw · lr 1.0e-04[0m                                                                                [34m│[0m
+[34m│[0m    [39mbatch · iters[0m   [1m8 · 600[0m                                                                                           [34m│[0m
+[34m│[0m    [39mmax seq      [0m   [1m512[0m                                                                                               [34m│[0m
+[34m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+Trainable parameters: 1.693% (10.093M/596.050M)
+  [1miter   train_loss     tok/s     tokens[0m
+  [38;5;244m   1[0m    [1;35mval[0m [1m5.661[0m    [38;5;244m30.18s[0m
+  [38;5;244m  10[0m    [1;32m4.647 ▼[0m    [1m   75[0m    [38;5;244m  2.3k[0m
+  [38;5;244m  20[0m    [1;32m4.192 ▼[0m    [1m   97[0m    [38;5;244m  4.8k[0m
+  [38;5;244m  30[0m    [1;32m3.971 ▼[0m    [1m   93[0m    [38;5;244m  7.1k[0m
+  [38;5;244m  40[0m    [1;32m3.928 ▼[0m    [1m   85[0m    [38;5;244m  9.4k[0m
+  [38;5;244m  50[0m    [1;35mval[0m [1m3.782[0m    [38;5;244m36.85s[0m
+  [38;5;244m  50[0m    [1;32m3.833 ▼[0m    [1m   69[0m    [38;5;244m 11.4k[0m
+  [38;5;244m  60[0m    [1;32m3.610 ▼[0m    [1m   48[0m    [38;5;244m 13.5k[0m
+  [38;5;244m  70[0m    [1;33m3.853 ▲[0m    [1m   55[0m    [38;5;244m 15.7k[0m
+  [38;5;244m  80[0m    [1;33m3.854 ▲[0m    [1m   66[0m    [38;5;244m 17.9k[0m
+  [38;5;244m  90[0m    [1;32m3.787 ▼[0m    [1m   68[0m    [38;5;244m 20.2k[0m
+  [38;5;244m 100[0m    [1;35mval[0m [1m3.628[0m    [38;5;244m42.66s[0m
+  [38;5;244m 100[0m    [1;32m3.454 ▼[0m    [1m   63[0m    [38;5;244m 22.3k[0m
+  [1;32msave[0m  [38;5;244m0000100_adapters.safetensors[0m
+  [38;5;244m 110[0m    [1;33m3.598 ▲[0m    [1m   54[0m    [38;5;244m 24.4k[0m
+  [38;5;244m 120[0m    [1;32m3.581 ▼[0m    [1m   63[0m    [38;5;244m 26.8k[0m
+  [38;5;244m 130[0m    [1;32m3.558 ▼[0m    [1m   63[0m    [38;5;244m 28.9k[0m
+  [38;5;244m 140[0m    [1;33m3.582 ▲[0m    [1m   71[0m    [38;5;244m 31.2k[0m
+  [38;5;244m 150[0m    [1;35mval[0m [1m3.479[0m    [38;5;244m41.90s[0m
+  [38;5;244m 150[0m    [1;33m3.633 ▲[0m    [1m   68[0m    [38;5;244m 33.5k[0m
+  [38;5;244m 160[0m    [1;32m3.590 ▼[0m    [1m   62[0m    [38;5;244m 35.6k[0m
+  [38;5;244m 170[0m    [1;32m3.481 ▼[0m    [1m   65[0m    [38;5;244m 37.8k[0m
+  [38;5;244m 180[0m    [1;33m3.584 ▲[0m    [1m   70[0m    [38;5;244m 40.1k[0m
+  [38;5;244m 190[0m    [1;32m3.523 ▼[0m    [1m   67[0m    [38;5;244m 42.4k[0m
+  [38;5;244m 200[0m    [1;35mval[0m [1m3.423[0m    [38;5;244m39.31s[0m
+  [38;5;244m 200[0m    [1;32m3.478 ▼[0m    [1m   69[0m    [38;5;244m 44.8k[0m
+  [1;32msave[0m  [38;5;244m0000200_adapters.safetensors[0m
+  [38;5;244m 210[0m    [1;32m3.466 ▼[0m    [1m   64[0m    [38;5;244m 47.1k[0m
+  [38;5;244m 220[0m    [1;32m3.448 ▼[0m    [1m   67[0m    [38;5;244m 49.3k[0m
+  [38;5;244m 230[0m    [1;33m3.530 ▲[0m    [1m   69[0m    [38;5;244m 51.8k[0m
+  [38;5;244m 240[0m    [1;32m3.437 ▼[0m    [1m   66[0m    [38;5;244m 54.0k[0m
+  [38;5;244m 250[0m    [1;35mval[0m [1m3.352[0m    [38;5;244m39.45s[0m
+  [38;5;244m 250[0m    [1;32m3.355 ▼[0m    [1m   66[0m    [38;5;244m 56.2k[0m
+  [38;5;244m 260[0m    [1;33m3.376 ▲[0m    [1m   69[0m    [38;5;244m 58.5k[0m
+  [38;5;244m 270[0m    [1;33m3.522 ▲[0m    [1m   66[0m    [38;5;244m 61.0k[0m
+  [38;5;244m 280[0m    [1;32m3.373 ▼[0m    [1m   58[0m    [38;5;244m 63.1k[0m
+swanlab: KeyboardInterrupt by user
+swanlab: 📁 View project at https://swanlab.cn/@kmno4/huanhuan-mlx
+swanlab: 🚀 View run run1 at 
+https://swanlab.cn/@kmno4/huanhuan-mlx/runs/0ohnjzz7
+swanlab: Upload complete: 1007 records
+[1;34mtrain[0m [34m██████████████[0m[34m▏[0m[38;5;244m░░░░░░░░░░░░░░░[0m [1;34m 47%[0m [38;5;244m·[0m [1;34m  284[0m[38;5;244m/600[0m
+Traceback (most recent call last):
+  File "/Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/.venv/bin/mlx_lm.lora", line 10, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/.venv/lib/python3.14/site-packages/mlx_lm/lora.py", line 392, in main
+    run(types.SimpleNamespace(**args))
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/.venv/lib/python3.14/site-packages/mlx_lm/lora.py", line 364, in run
+    train_model(args, model, train_set, valid_set, training_callback)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/.venv/lib/python3.14/site-packages/mlx_lm/lora.py", line 306, in train_model
+    train(
+    ~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<4 lines>...
+        training_callback=training_callback,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/.venv/lib/python3.14/site-packages/mlx_lm/tuner/trainer.py", line 331, in train
+    mx.eval(state, losses, n_tokens, grad_accum)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/.venv/lib/python3.14/site-packages/swanlab/sdk/internal/run/__init__.py", line 210, in _handle_sigint
+    self._original_sigint_handler(signum, frame)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+KeyboardInterrupt

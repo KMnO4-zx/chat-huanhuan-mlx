@@ -1,0 +1,159 @@
+[
+ {
+  "run_id": 1,
+  "name": "run1",
+  "config": "configs/base.yaml",
+  "extra_args": [],
+  "adapter_path": "outputs/adapters/run1",
+  "started_at": "2026-11-01T16:21:04",
+  "max_seconds": 1200,
+  "status": "timeout_20min",
+  "exit_code": 130,
+  "finished_at": "2026-11-01T16:41:05",
+  "duration_seconds": 1200.9,
+  "swanlab_urls": [
+   "https://swanlab.cn/@kmno4/huanhuan-mlx",
+   "https://swanlab.cn/@kmno4/huanhuan-mlx/runs/0ohnjzz7"
+  ],
+  "adapter_exists": true,
+  "interrupted_by": "watchdog SIGINT at 20min (old runner lacked a working timeout)",
+  "checkpoints": [
+   "0000100_adapters.safetensors",
+   "0000200_adapters.safetensors"
+  ],
+  "final_saved_iteration": 200,
+  "log_file": "logs/run1.log"
+ },
+ {
+  "run_id": 2,
+  "name": "run2-attempt1",
+  "config": "configs/run2.yaml",
+  "extra_args": [],
+  "adapter_path": "outputs/adapters/run2",
+  "started_at": "2026-11-01T16:46:14",
+  "max_seconds": 1200,
+  "status": "failed",
+  "exit_code": 1,
+  "finished_at": "2026-11-01T16:46:15",
+  "duration_seconds": 0.8,
+  "swanlab_urls": [],
+  "adapter_exists": false,
+  "checkpoints": [],
+  "failure": "startup ImportError: scripts/watchdog.py shadowed PyPI watchdog package (renamed to enforce_timeout.py)"
+ },
+ {
+  "run_id": 3,
+  "name": "run2",
+  "config": "configs/run2.yaml",
+  "extra_args": [],
+  "adapter_path": "outputs/adapters/run2",
+  "started_at": "2026-11-01T16:47:33",
+  "max_seconds": 1200,
+  "status": "ok",
+  "exit_code": 0,
+  "finished_at": "2026-11-01T17:00:49",
+  "duration_seconds": 796.0,
+  "swanlab_urls": [
+   "https://swanlab.cn/@kmno4/huanhuan-mlx",
+   "https://swanlab.cn/@kmno4/huanhuan-mlx/runs/69uiyxbn"
+  ],
+  "adapter_exists": true,
+  "checkpoints": [
+   "0000050_adapters.safetensors",
+   "0000100_adapters.safetensors",
+   "0000150_adapters.safetensors",
+   "0000200_adapters.safetensors",
+   "0000250_adapters.safetensors",
+   "0000300_adapters.safetensors",
+   "0000350_adapters.safetensors",
+   "0000400_adapters.safetensors",
+   "0000450_adapters.safetensors",
+   "0000500_adapters.safetensors"
+  ],
+  "log_file": "logs/run2.log"
+ },
+ {
+  "run_id": 4,
+  "name": "run3",
+  "config": "configs/run3.yaml",
+  "extra_args": [],
+  "adapter_path": "outputs/adapters/run3",
+  "started_at": "2026-11-01T17:14:36",
+  "max_seconds": 1200,
+  "status": "ok",
+  "exit_code": 0,
+  "finished_at": "2026-11-01T17:24:50",
+  "duration_seconds": 613.5,
+  "swanlab_urls": [
+   "https://swanlab.cn/@kmno4/huanhuan-mlx",
+   "https://swanlab.cn/@kmno4/huanhuan-mlx/runs/l0mkru9k"
+  ],
+  "adapter_exists": true,
+  "checkpoints": [
+   "0000050_adapters.safetensors",
+   "0000100_adapters.safetensors",
+   "0000150_adapters.safetensors",
+   "0000200_adapters.safetensors",
+   "0000250_adapters.safetensors",
+   "0000300_adapters.safetensors",
+   "0000350_adapters.safetensors",
+   "0000400_adapters.safetensors"
+  ],
+  "log_file": "logs/run3.log"
+ },
+ {
+  "run_id": 5,
+  "name": "run4",
+  "config": "configs/run4.yaml",
+  "extra_args": [],
+  "adapter_path": "outputs/adapters/run4",
+  "started_at": "2026-11-01T17:30:35",
+  "max_seconds": 1200,
+  "status": "ok",
+  "exit_code": 0,
+  "finished_at": "2026-11-01T17:40:07",
+  "duration_seconds": 572.0,
+  "swanlab_urls": [
+   "https://swanlab.cn/@kmno4/huanhuan-mlx",
+   "https://swanlab.cn/@kmno4/huanhuan-mlx/runs/oscjv49u"
+  ],
+  "adapter_exists": true,
+  "checkpoints": [
+   "0000050_adapters.safetensors",
+   "0000100_adapters.safetensors",
+   "0000150_adapters.safetensors",
+   "0000200_adapters.safetensors",
+   "0000250_adapters.safetensors",
+   "0000300_adapters.safetensors",
+   "0000350_adapters.safetensors"
+  ],
+  "log_file": "logs/run4.log"
+ },
+ {
+  "run_id": 6,
+  "name": "run5",
+  "config": "configs/run5.yaml",
+  "extra_args": [],
+  "adapter_path": "outputs/adapters/run5",
+  "started_at": "2026-11-01T17:48:50",
+  "max_seconds": 1200,
+  "status": "ok",
+  "exit_code": 0,
+  "finished_at": "2026-11-01T17:52:46",
+  "duration_seconds": 236.0,
+  "swanlab_urls": [
+   "https://swanlab.cn/@kmno4/huanhuan-mlx",
+   "https://swanlab.cn/@kmno4/huanhuan-mlx/runs/c5m075jv"
+  ],
+  "adapter_exists": true,
+  "checkpoints": [
+   "0000025_adapters.safetensors",
+   "0000050_adapters.safetensors",
+   "0000075_adapters.safetensors",
+   "0000100_adapters.safetensors",
+   "0000125_adapters.safetensors",
+   "0000150_adapters.safetensors"
+  ],
+  "log_file": "logs/run5.log"
+ }
+]

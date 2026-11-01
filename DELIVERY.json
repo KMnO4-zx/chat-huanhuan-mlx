@@ -1,0 +1,25 @@
+{
+  "selected_tag": "run5_iter125",
+  "adapter": "outputs/adapters/final",
+  "standalone_model": "models/Qwen3-0.6B-huanhuan-mlx",
+  "base_model": "models/Qwen3-0.6B-mlx",
+  "benchmark": "benchmark/benchmark.json",
+  "base_eval": {
+    "total": 8.451,
+    "n_cases": 41,
+    "benchmark_version": "1.2",
+    "enable_thinking": false,
+    "eval_file": "outputs/eval/base.json"
+  },
+  "final_eval": {
+    "total": 8.732,
+    "n_cases": 41,
+    "benchmark_version": "1.2",
+    "enable_thinking": false,
+    "eval_file": "outputs/eval/run5_iter125.json"
+  },
+  "delta": 0.281,
+  "swanlab_project": "https://swanlab.cn/@kmno4/huanhuan-mlx",
+  "improvements": "IMPROVEMENTS.md",
+  "report": "REPORT.md"
+}
