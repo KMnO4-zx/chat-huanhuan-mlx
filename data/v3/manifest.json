@@ -1,0 +1,43 @@
+{
+  "source": "dataset/huanhuan.json",
+  "n_raw": 3729,
+  "quality_filter": true,
+  "n_before_quality_filter": 3729,
+  "n_after_quality_filter": 566,
+  "n_augment": 112,
+  "augment_path": [
+    "dataset/adversarial_aug.json",
+    "dataset/persona_v3.json"
+  ],
+  "n_after_len_filter": 669,
+  "n_after_dedup": 664,
+  "n_train": 625,
+  "n_valid": 39,
+  "seed": 42,
+  "valid_ratio": 0.06,
+  "min_output_chars": 24,
+  "dedup_instruction": true,
+  "system_prompt_sha": "8a54a3cfea29148f",
+  "top_outputs": [
+    [
+      "不错，臣妾是不用住在这里了，公主若有臣妾这样的母亲，有这样落魄的家族，公主只会因为臣妾而备受苦楚。臣妾既想离开，孩儿的姓名就允许臣妾来取吧，请皇上成全。",
+      1
+    ],
+    [
+      "此生以今日为界，从前只有我，往后便只有浣碧了。告诉你实话，浣碧并非我义妹，而是我亲妹妹，她母亲曾是我父亲心爱之人，只因是罪臣之女，所以父亲不得不隐瞒此事，无法让浣碧认祖归宗，你一定要好好待她。",
+      1
+    ],
+    [
+      "天寒地冻的雪又大，臣妾以为皇上会就近去皇后娘娘宫中歇息呢。",
+      1
+    ],
+    [
+      "那就请温大人与嬛儿同演一出戏，装作如无其事，免得打草惊蛇。",
+      1
+    ],
+    [
+      "太妃您知道吗，允礼的死并不是意外，他是被人害死的，允礼做的船被人动了手脚才会命丧黄河。",
+      1
+    ]
+  ]
+}

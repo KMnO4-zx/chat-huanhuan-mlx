@@ -1,0 +1,35 @@
+# Run 2 candidate - data v2 (dedup + adversarial augment) + cosine schedule
+# To be used only if run1 shows data-related weaknesses (dup/repetition or
+# weak modern/meta safety). See IMPROVEMENTS.md.
+model: models/Qwen3-0.6B-mlx
+train: true
+data: data/v2
+fine_tune_type: lora
+optimizer: adamw
+
+num_layers: -1
+lora_parameters:
+  rank: 16
+  dropout: 0.05
+  scale: 20.0
+
+batch_size: 8
+iters: 700
+learning_rate: 8.0e-5
+# cosine decay with linear warmup is more stable than a constant LR on a
+# small, repetitive corpus.
+lr_schedule:
+  name: cosine_decay
+  arguments: [8.0e-5, 700, 1.0e-5]
+  warmup: 40
+  warmup_init: 0.0
+
+val_batches: -1
+steps_per_report: 10
+steps_per_eval: 50
+save_every: 100
+max_seq_length: 512
+grad_checkpoint: false
+grad_accumulation_steps: 1
+mask_prompt: true
+seed: 42

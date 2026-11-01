@@ -1,0 +1,52 @@
+# Run 5 - restore period self-reference ("臣妾/本宫") without losing the
+# refusal gains from run4.
+#
+# Diagnosis: every full eval shows the trained models' ONLY structural gap
+# vs base is `in_character` (base emits 臣妾/本宫 in 98% of replies; run4i100
+# in 71%). The training targets, however varied their content, open with
+# other frames ("爱读些闲书…", "家里人…") and drag the opening distribution
+# away from the palace register. data/v5 adds dataset/selfref_v5.json (90
+# hand-written replies that ALL open with 臣妾/本宫) oversampled 4x, while
+# keeping refusal_v4 at 4x so modern/meta stays fixed.
+#
+# Short run (reference config style: avoid overfitting) - 150 iters only.
+model: models/Qwen3-0.6B-mlx
+train: true
+data: data/v5
+fine_tune_type: lora
+optimizer: adamw
+
+num_layers: -1
+lora_parameters:
+  keys:
+    - self_attn.q_proj
+    - self_attn.v_proj
+    - self_attn.k_proj
+    - self_attn.o_proj
+    - mlp.gate_proj
+    - mlp.up_proj
+  rank: 16
+  dropout: 0.1
+  scale: 16.0
+
+# Resume the best evaluated checkpoint so far (run4 iter100 = 8.370).
+resume_adapter_file: outputs/adapters/run4_iter100/adapters.safetensors
+
+batch_size: 4
+iters: 150
+lr_schedule:
+  name: cosine_decay
+  arguments: [1.5e-5, 150, 1.0e-6]
+  warmup: 10
+  warmup_init: 0.0
+
+# data/v5 has 79 valid samples (~20 batches) - evaluate the whole split.
+val_batches: 20
+steps_per_report: 10
+steps_per_eval: 50
+save_every: 25
+max_seq_length: 384
+grad_checkpoint: false
+grad_accumulation_steps: 1
+mask_prompt: true
+seed: 42

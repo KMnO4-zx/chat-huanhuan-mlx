@@ -1,0 +1,37 @@
+{
+  "source": "dataset/huanhuan.json",
+  "n_raw": 3729,
+  "n_augment": 34,
+  "augment_path": "dataset/adversarial_aug.json",
+  "n_after_len_filter": 3763,
+  "n_after_dedup": 3525,
+  "n_train": 3314,
+  "n_valid": 211,
+  "seed": 42,
+  "valid_ratio": 0.06,
+  "min_output_chars": 1,
+  "dedup_instruction": true,
+  "system_prompt_sha": "8a54a3cfea29148f",
+  "top_outputs": [
+    [
+      "是。",
+      21
+    ],
+    [
+      "谢皇上。",
+      12
+    ],
+    [
+      "臣妾恭送皇上。",
+      11
+    ],
+    [
+      "皇上万福金安。",
+      8
+    ],
+    [
+      "多谢皇上。",
+      7
+    ]
+  ]
+}

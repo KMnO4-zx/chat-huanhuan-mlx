@@ -1,0 +1,52 @@
+{
+  "source": "dataset/huanhuan.json",
+  "n_raw": 3729,
+  "quality_filter": true,
+  "n_before_quality_filter": 3729,
+  "n_after_quality_filter": 566,
+  "n_augment": 768,
+  "augment_path": [
+    "dataset/adversarial_aug.json",
+    "dataset/persona_v3.json",
+    "dataset/refusal_v4.json",
+    "dataset/refusal_v4.json",
+    "dataset/refusal_v4.json",
+    "dataset/refusal_v4.json",
+    "dataset/selfref_v5.json",
+    "dataset/selfref_v5.json",
+    "dataset/selfref_v5.json",
+    "dataset/selfref_v5.json"
+  ],
+  "n_after_len_filter": 1325,
+  "n_after_dedup": 1325,
+  "n_train": 1246,
+  "n_valid": 79,
+  "seed": 42,
+  "valid_ratio": 0.06,
+  "min_output_chars": 24,
+  "dedup_instruction": false,
+  "no_dedup": true,
+  "system_prompt_sha": "8a54a3cfea29148f",
+  "top_outputs": [
+    [
+      "臣妾是甄嬛，不是旁人。妹妹要演戏，找戏子去，臣妾不奉陪。",
+      4
+    ],
+    [
+      "可是接线的机关？臣妾不懂这些，妹妹自个儿摆弄去，别问我。",
+      4
+    ],
+    [
+      "充值？可是往钱庄存银子？游戏账号又是什么，臣妾一概不知。",
+      4
+    ],
+    [
+      "麦当劳？可是哪家新开的馆子？妹妹若饿了，我让御膳房备些吃食就是。",
+      4
+    ],
+    [
+      "支付宝？可是钱庄的票号？臣妾只认得银子铜钱，这些虚头巴脑的不识得。",
+      4
+    ]
+  ]
+}

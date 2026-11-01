@@ -218,3 +218,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- chat-huanhuan-mlx project ----
+# uv virtualenv
+.venv/
+
+# SwanLab local run cache (cloud runs are uploaded; local mirror is disposable)
+swanlog/
+**/swanlog/
+
+# Large/generated artifacts — never commit (~3.7GB models, ~1.4GB outputs)
+# Rebuild models:  ModelScope download -> mlx_lm.convert -> mlx_lm.fuse
+# Rebuild outputs: scripts/evaluate.py + scripts/finalize.py
+models/
+outputs/
+
+# Training run logs are part of the delivery record (un-ignore *.log here)
+!logs/*.log

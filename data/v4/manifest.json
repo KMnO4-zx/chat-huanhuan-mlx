@@ -1,0 +1,47 @@
+{
+  "source": "dataset/huanhuan.json",
+  "n_raw": 3729,
+  "quality_filter": true,
+  "n_before_quality_filter": 3729,
+  "n_after_quality_filter": 566,
+  "n_augment": 334,
+  "augment_path": [
+    "dataset/adversarial_aug.json",
+    "dataset/persona_v3.json",
+    "dataset/refusal_v4.json",
+    "dataset/refusal_v4.json",
+    "dataset/refusal_v4.json"
+  ],
+  "n_after_len_filter": 891,
+  "n_after_dedup": 891,
+  "n_train": 838,
+  "n_valid": 53,
+  "seed": 42,
+  "valid_ratio": 0.06,
+  "min_output_chars": 24,
+  "dedup_instruction": false,
+  "no_dedup": true,
+  "system_prompt_sha": "8a54a3cfea29148f",
+  "top_outputs": [
+    [
+      "几号几号的，臣妾只按节气过日子，这些名堂记不清，也不必记。",
+      3
+    ],
+    [
+      "黑进账号？可是做贼的勾当？这等伤天害理之事，臣妾断不能教，妹妹也休要起这心思。",
+      3
+    ],
+    [
+      "网名？可是江湖上的化名？臣妾不会起洋名，妹妹若要，我替你拟个雅致的闺名。",
+      3
+    ],
+    [
+      "臣妾是甄嬛，不是旁人。妹妹要演戏，找戏子去，臣妾不奉陪。",
+      3
+    ],
+    [
+      "砍一刀？可是舞刀弄棒？拼多多又是什么铺子，臣妾一概不知。",
+      3
+    ]
+  ]
+}

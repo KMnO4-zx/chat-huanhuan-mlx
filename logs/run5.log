@@ -1,0 +1,52 @@
+Loading configuration file /Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/configs/run5.yaml
+swanlab: Tracking run with swanlab version 0.10.3
+swanlab: 💾 Run data saved at 
+/Users/kmno4-zx/Desktop/Daily/github-project/chat-huanhuan-mlx/outputs/adapters/
+run5/swanlog/run-20261101_174851-c5m075jv
+swanlab: 📁 View project at https://swanlab.cn/@kmno4/huanhuan-mlx
+swanlab: 🚀 View run run5 at 
+https://swanlab.cn/@kmno4/huanhuan-mlx/runs/c5m075jv
+Loading pretrained model
+Loading datasets
+Training
+Loading fine-tuned weights from outputs/adapters/run4_iter100/adapters.safetensors
+[34m╭─[0m[34m [0m[1;35mmlx_lm.lora[0m[34m [0m[34m───────────────────────────────────────────────────────────────────────────────────────────────────────[0m[34m─╮[0m
+[34m│[0m    [39mmodel        [0m   [1mmodels/Qwen3-0.6B-mlx[0m                                                                             [34m│[0m
+[34m│[0m    [39mtype         [0m   [1mlora · -1 layers · rank 16[0m                                                                        [34m│[0m
+[34m│[0m    [39mdataset      [0m   [1mdata/v5[0m                                                                                           [34m│[0m
+[34m│[0m    [39moptimizer    [0m   [1madamw · lr 1.0e-05[0m                                                                                [34m│[0m
+[34m│[0m    [39mbatch · iters[0m   [1m4 · 150[0m                                                                                           [34m│[0m
+[34m│[0m    [39mmax seq      [0m   [1m384[0m                                                                                               [34m│[0m
+[34m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+Trainable parameters: 1.385% (8.258M/596.050M)
+  [1miter   train_loss     tok/s     tokens[0m
+  [38;5;244m   1[0m    [1;35mval[0m [1m1.731[0m    [38;5;244m9.53s[0m
+  [38;5;244m  10[0m    [1;32m1.993 ▼[0m    [1m  129[0m    [38;5;244m  1.4k[0m
+  [38;5;244m  20[0m    [1;33m2.148 ▲[0m    [1m  145[0m    [38;5;244m  3.0k[0m
+  [1;32msave[0m  [38;5;244m0000025_adapters.safetensors[0m
+  [38;5;244m  30[0m    [1;32m1.780 ▼[0m    [1m  145[0m    [38;5;244m  4.7k[0m
+  [38;5;244m  40[0m    [1;32m1.743 ▼[0m    [1m  139[0m    [38;5;244m  6.1k[0m
+  [38;5;244m  50[0m    [1;35mval[0m [1m1.667[0m    [38;5;244m9.98s[0m
+  [38;5;244m  50[0m    [1;33m1.772 ▲[0m    [1m  135[0m    [38;5;244m  7.6k[0m
+  [1;32msave[0m  [38;5;244m0000050_adapters.safetensors[0m
+  [38;5;244m  60[0m    [1;32m1.617 ▼[0m    [1m  144[0m    [38;5;244m  9.1k[0m
+  [38;5;244m  70[0m    [1;33m1.735 ▲[0m    [1m  145[0m    [38;5;244m 10.9k[0m
+  [1;32msave[0m  [38;5;244m0000075_adapters.safetensors[0m
+  [38;5;244m  80[0m    [1;33m1.877 ▲[0m    [1m  142[0m    [38;5;244m 12.5k[0m
+  [38;5;244m  90[0m    [1;32m1.663 ▼[0m    [1m  134[0m    [38;5;244m 14.0k[0m
+  [38;5;244m 100[0m    [1;35mval[0m [1m1.494[0m    [38;5;244m11.38s[0m
+  [38;5;244m 100[0m    [1;32m1.607 ▼[0m    [1m  121[0m    [38;5;244m 15.4k[0m
+  [1;32msave[0m  [38;5;244m0000100_adapters.safetensors[0m
+  [38;5;244m 110[0m    [1;33m1.848 ▲[0m    [1m  114[0m    [38;5;244m 17.0k[0m
+  [38;5;244m 120[0m    [1;32m1.626 ▼[0m    [1m  114[0m    [38;5;244m 18.7k[0m
+  [1;32msave[0m  [38;5;244m0000125_adapters.safetensors[0m
+  [38;5;244m 130[0m    [1;32m1.447 ▼[0m    [1m   96[0m    [38;5;244m 20.1k[0m
+  [38;5;244m 140[0m    [1;33m1.636 ▲[0m    [1m   99[0m    [38;5;244m 21.8k[0m
+  [38;5;244m 150[0m    [1;35mval[0m [1m1.425[0m    [38;5;244m12.98s[0m
+  [38;5;244m 150[0m    [1;33m1.823 ▲[0m    [1m  108[0m    [38;5;244m 23.5k[0m
+  [1;32msave[0m  [38;5;244m0000150_adapters.safetensors[0m
+[1;34mtrain[0m [34m██████████████████████████████[0m [1;34m100%[0m [38;5;244m·[0m [1;34m  150[0m[38;5;244m/150[0m
+swanlab: 📁 View project at https://swanlab.cn/@kmno4/huanhuan-mlx
+swanlab: 🚀 View run run5 at 
+https://swanlab.cn/@kmno4/huanhuan-mlx/runs/c5m075jv
+swanlab: Upload complete: 323 records
